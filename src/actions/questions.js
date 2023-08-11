@@ -13,12 +13,11 @@ export function receiveQuestions(questions) {
 }
 
 function answerQuestion(question, answer, authedUser) {
-  console.log("question answered:", question)
   return {
     type: ANSWER_QUESTION,
     question,
     answer,
-    authedUser
+    authedUser,
   };
 }
 
@@ -44,14 +43,13 @@ export function handleSaveQuestion(optionOneText, optionTwoText) {
 }
 
 export function handleAnswerQuestion(qid, answer) {
-  console.log("qid: ", qid)
   return (dispatch, getState) => {
     const { authedUser, questions } = getState();
     dispatch(showLoading());
     return saveQuestionAnswer({
       authedUser,
       qid,
-      answer
+      answer,
     })
       .then(() => dispatch(answerQuestion(questions[qid], answer, authedUser)))
       .then(() => dispatch(hideLoading()));

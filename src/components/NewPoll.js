@@ -1,10 +1,13 @@
 import { useState } from "react";
 import { handleSaveQuestion } from "../actions/questions";
 import { connect } from "react-redux";
+import { useNavigate } from "react-router-dom";
 
 const NewPoll = ({ dispatch }) => {
   const [optionOne, setOptionOne] = useState("");
   const [optionTwo, setOptionTwo] = useState("");
+
+  const navigate = useNavigate();
 
   const handleChangeOptOne = (e) => {
     const optionOne = e.target.value;
@@ -21,6 +24,7 @@ const NewPoll = ({ dispatch }) => {
     dispatch(handleSaveQuestion(optionOne, optionTwo));
     setOptionOne("");
     setOptionTwo("");
+    navigate("/");
   };
 
   return (

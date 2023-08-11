@@ -1,14 +1,13 @@
-import React from "react";
-import { render } from "@testing-library/react";
 import { Provider } from "react-redux";
 import { MemoryRouter } from "react-router-dom";
-import Leaderboard from "../../components/Leaderboard";
+import { render } from "@testing-library/react";
+import Nav from "../../components/Nav";
 import configureStore from "redux-mock-store";
 
 const mockStore = configureStore([]);
 
 const initialState = {
-  authedUser: null,
+  authedUser: "sarahedo",
   users: {
     sarahedo: {
       id: "sarahedo",
@@ -23,17 +22,6 @@ const initialState = {
       },
       questions: ["8xf0y6ziyjabvozdd253nd", "am8ehyc8byjqgar0jgpub9"],
     },
-    tylermcginnis: {
-      id: "tylermcginnis",
-      password: "abc321",
-      name: "Tyler McGinnis",
-      avatarURL: "images/",
-      answers: {
-        vthrdm985a262al8qx3do: "optionOne",
-        xj352vofupe1dqz9emx13r: "optionTwo",
-      },
-      questions: ["loxhs1bqm25b708cmbf3g", "vthrdm985a262al8qx3do"],
-    },
   },
   questions: {},
   loadingBar: {},
@@ -41,16 +29,15 @@ const initialState = {
 
 const store = mockStore(initialState);
 
-describe("Leaderboard", () => {
-  it("will show the leaderboard page", () => {
+describe("Nav", () => {
+  it("will show the navigation menu", () => {
     var component = render(
       <Provider store={store}>
         <MemoryRouter>
-          <Leaderboard />
+          <Nav />
         </MemoryRouter>
       </Provider>
     );
-
     expect(component).toMatchSnapshot();
   });
 });

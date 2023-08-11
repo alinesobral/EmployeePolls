@@ -21,7 +21,7 @@ const Login = (props) => {
     setPasswordTxt("");
   };
   return (
-    <div className="box">
+    <div className="box" data-testid="login">
       <h1>Employee Polls</h1>
       <form onSubmit={handleSubmit}>
         <div>

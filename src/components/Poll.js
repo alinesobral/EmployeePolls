@@ -3,7 +3,6 @@ import { handleAnswerQuestion } from "../actions/questions";
 import { saveAnswer } from "../actions/users";
 
 const Poll = ({ question, authedUser, dispatch, users }) => {
-  console.log("question is valid?: ", question);
   const answered =
     question.optionOne.votes.includes(authedUser) ||
     question.optionTwo.votes.includes(authedUser);
@@ -33,7 +32,13 @@ const Poll = ({ question, authedUser, dispatch, users }) => {
           alt="user's avatar"
         />
       </div>
-      <div className="box-question">
+      <div
+        className={
+          users[authedUser].answers[question.id] === "optionOne"
+            ? "box-question selected-answer"
+            : "box-question"
+        }
+      >
         <p>{question.optionOne.text}</p>
         <button
           type="submit"
@@ -63,7 +68,13 @@ const Poll = ({ question, authedUser, dispatch, users }) => {
           </div>
         )}
       </div>
-      <div className="box-question">
+      <div
+        className={
+          users[authedUser].answers[question.id] === "optionTwo"
+            ? "box-question selected-answer"
+            : "box-question"
+        }
+      >
         <p>{question.optionTwo.text}</p>
         <button
           type="submit"

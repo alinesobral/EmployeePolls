@@ -34,4 +34,4 @@ To run the Jest unit tests, please run:
 
 ## Sources
 
-All avatars were retrieved from: vecteezy.com
+All user avatars were retrieved from: https://tylermcginnis.com

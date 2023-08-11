@@ -1,102 +1,116 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Login will show the login page 1`] = `
+exports[`Nav will show the navigation menu 1`] = `
 Object {
   "asFragment": [Function],
   "baseElement": <body>
     <div>
       <div
-        class="box"
-        data-testid="login"
+        class="header"
       >
-        <h1>
-          Employee Polls
-        </h1>
-        <form>
-          <div>
-            <p>
-              Username: 
-            </p>
-            <input
-              class="textbox"
-              data-testid="username"
-              maxlength="32"
-              placeholder="Username"
-              value=""
+        <div
+          class="logo"
+        >
+          <a
+            href="/"
+          >
+            <span>
+              Home
+            </span>
+          </a>
+          <a
+            data-testid="leaderboard"
+            href="/leaderboard"
+          >
+            <span>
+              Leaderboard
+            </span>
+          </a>
+          <a
+            href="/add"
+          >
+            <span>
+              New
+            </span>
+          </a>
+        </div>
+        <div
+          class="header-right"
+        >
+          <span>
+            <img
+              alt="user's avatar"
+              class="thumbnail"
+              src="/images/sarahedo.jpg"
             />
-          </div>
-          <div>
-            <p>
-              Password: 
-            </p>
-            <input
-              class="password"
-              data-testid="password"
-              maxlength="32"
-              placeholder="Password"
-              type="password"
-              value=""
-            />
-          </div>
-          <div>
+          </span>
+          <span>
+            sarahedo
+          </span>
+          <span>
             <button
-              class="btn"
-              data-testid="loginUserBtn"
-              disabled=""
+              class="logout-btn"
               type="submit"
             >
-              Login
+              Logout
             </button>
-          </div>
-        </form>
+          </span>
+        </div>
       </div>
     </div>
   </body>,
   "container": <div>
     <div
-      class="box"
-      data-testid="login"
+      class="header"
     >
-      <h1>
-        Employee Polls
-      </h1>
-      <form>
-        <div>
-          <p>
-            Username: 
-          </p>
-          <input
-            class="textbox"
-            data-testid="username"
-            maxlength="32"
-            placeholder="Username"
-            value=""
+      <div
+        class="logo"
+      >
+        <a
+          href="/"
+        >
+          <span>
+            Home
+          </span>
+        </a>
+        <a
+          data-testid="leaderboard"
+          href="/leaderboard"
+        >
+          <span>
+            Leaderboard
+          </span>
+        </a>
+        <a
+          href="/add"
+        >
+          <span>
+            New
+          </span>
+        </a>
+      </div>
+      <div
+        class="header-right"
+      >
+        <span>
+          <img
+            alt="user's avatar"
+            class="thumbnail"
+            src="/images/sarahedo.jpg"
           />
-        </div>
-        <div>
-          <p>
-            Password: 
-          </p>
-          <input
-            class="password"
-            data-testid="password"
-            maxlength="32"
-            placeholder="Password"
-            type="password"
-            value=""
-          />
-        </div>
-        <div>
+        </span>
+        <span>
+          sarahedo
+        </span>
+        <span>
           <button
-            class="btn"
-            data-testid="loginUserBtn"
-            disabled=""
+            class="logout-btn"
             type="submit"
           >
-            Login
+            Logout
           </button>
-        </div>
-      </form>
+        </span>
+      </div>
     </div>
   </div>,
   "debug": [Function],

@@ -1,7 +1,6 @@
 import { connect } from "react-redux";
 
 const Leaderboard = (props) => {
-  console.log("Leaderboard props: ", props.users);
   return (
     <div>
       <h1>Leaderboard</h1>
@@ -18,7 +17,11 @@ const Leaderboard = (props) => {
             <tr key={user.id}>
               <td className="wide">
                 <div>
-                  <img src={user.avatarURL} alt="user's avatar" />
+                  <img
+                    className="leaderboard-avatar"
+                    src={user.avatarURL}
+                    alt="user's avatar"
+                  />
                 </div>
                 <div>{user.name} </div>
                 <div className="user-handle">{user.id}</div>
