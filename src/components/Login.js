@@ -5,6 +5,7 @@ import { connect } from "react-redux";
 const Login = (props) => {
   const [usernameTxt, setUsernameTxt] = useState("");
   const [passwordTxt, setPasswordTxt] = useState("");
+  const [loginError, setLoginError] = useState(false);
 
   const handleChangeUser = (e) => {
     const text = e.target.value;
@@ -16,13 +17,18 @@ const Login = (props) => {
   };
   const handleSubmit = (e) => {
     e.preventDefault();
-    props.dispatch(handleLogin(usernameTxt, passwordTxt));
+    props.dispatch(handleLogin(usernameTxt, passwordTxt)).then((response) => {
+      if (!response) {
+        setLoginError(true);
+      }
+    });
     setUsernameTxt("");
     setPasswordTxt("");
   };
   return (
     <div className="box" data-testid="login">
       <h1>Employee Polls</h1>
+      {loginError && <p data-testid="loginError">Invalid username/password</p>}
       <form onSubmit={handleSubmit}>
         <div>
           <p>Username: </p>

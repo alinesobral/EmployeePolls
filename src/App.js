@@ -14,7 +14,7 @@ import NotFound from "./components/NotFound";
 const App = (props) => {
   useEffect(() => {
     props.dispatch(handleInitialData());
-  }, []);
+  }, [props]);
 
   return (
     <Fragment>

@@ -72,7 +72,7 @@ describe("Login", () => {
     fireEvent.click(loginUser);
 
     await waitFor(() => {
-      expect(screen.getByTestId("login")).toBeInTheDocument();
+      expect(screen.getByTestId("loginError")).toBeInTheDocument();
     });
   });
 

@@ -25,7 +25,7 @@ export function handleLogin(username, password) {
     })
       .then((authedUserId) => dispatch(setAuthedUser(authedUserId)))
       .catch((e) => {
-        console.warn("Error in handleLogin: ", e);
+        return false;
       });
   };
 }
