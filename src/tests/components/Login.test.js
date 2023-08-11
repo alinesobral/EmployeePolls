@@ -55,7 +55,7 @@ describe("Login", () => {
     expect(screen.getByTestId("login")).toBeInTheDocument();
   });
 
-  it("user is logged in", async () => {
+  it(" will return the login page for an invalid username/password combination", async () => {
     var component = render(
       <MemoryRouter>
         <Provider store={mockStore}>
