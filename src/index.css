@@ -1,0 +1,255 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  margin: 20px 0px 20px 0px;   
+  background:#fff;
+  margin: 0 auto 0 auto;  
+  width:100%; 
+  text-align:center;
+  margin: 20px 0px 20px 0px;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+p{
+  font-size:14px;
+  text-decoration: none;
+  color:#000;
+}
+
+.question-details {
+  font-size:16px;
+  font-weight:700;
+  color:#000;
+  font-family: sans-serif;
+}
+
+h1{
+  font-size:1.5em;
+  color:#525252;
+}
+
+.box{
+  background:white;
+  width:300px;
+  border-radius:6px;
+  margin: 0 auto 0 auto;
+  padding:0px 0px 70px 0px;
+  border: #000000 2px solid; 
+}
+
+.box-question{
+  background:white;
+  width:300px;
+  border-radius:6px;
+  margin: 10px;
+  padding:0px 0px 70px 0px;
+  border: #000000 1px solid; 
+  display:inline-block;
+}
+
+
+.textbox{
+  background:#ecf0f1;
+  border: #ccc 1px solid;
+  border-bottom: #ccc 2px solid;
+  padding: 8px;
+  width:250px;
+  color:#000;
+  margin-top:10px;
+  font-size:1em;
+  border-radius:4px;
+}
+
+.password{
+  border-radius:4px;
+  background:#ecf0f1;
+  border: #ccc 1px solid;
+  padding: 8px;
+  width:250px;
+  font-size:1em;
+}
+
+.btn{
+  background:#2ecc71;
+  width:125px;
+  padding-top:5px;
+  padding-bottom:5px;
+  color:white;
+  border-radius:4px;
+  border: #27ae60 1px solid;
+  margin-top:20px;
+  margin-bottom:20px;
+  float:center;
+  margin-left:16px;
+  font-weight:800;
+  font-size:0.8em;
+}
+
+.btn:hover{
+  background:#2CC06B; 
+}
+
+.question-details-btn{
+  background:#fff;
+  width:125px;
+  padding-top:5px;
+  padding-bottom:5px;
+  color:black;
+  border-radius:4px;
+  border: #27ae60 1px solid;
+  margin-top:20px;
+  margin-bottom:20px;
+  float:center;
+  margin-left:16px;
+  font-weight:800;
+  font-size:0.8em;
+}
+
+.logout-btn{
+  background:#fff;
+  width:100px;
+  padding-top:5px;
+  padding-bottom:5px;
+  color:black;
+  border: #2CC06B 1px solid;
+  float:center;
+  font-weight:800;
+  font-size:0.8em;
+}
+
+.logout-btn[disabled]{
+    background:#ddd;
+    width:100px;
+    padding-top:5px;
+    padding-bottom:5px;
+    color:black;
+    border: #ddd 1px solid;
+    float:center;
+    font-weight:800;
+    font-size:0.8em;
+}
+
+.answer-btn{
+  background:#fff;
+  width:100px;
+  padding-top:5px;
+  padding-bottom:5px;
+  color:black;
+  border: red 1px solid;
+  float:center;
+  font-weight:800;
+  font-size:0.8em;
+}
+
+.question-details-btn:hover{
+  background:#27ae60; 
+}
+
+.item {
+  padding: 20px;
+  font-size: 20px;
+  font-family: sans-serif;
+  color: #fff;
+  float:left;
+}
+
+/* Nav bar */
+/* Style the header with a grey background and some padding */
+.header {
+  overflow: hidden;
+  background-color: #f1f1f1;
+  padding: 10px 10px;
+}
+
+.header span {
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 25px;
+  border-radius: 4px;
+}
+
+.header div.logo {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.header span:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.header span.active {
+  background-color: dodgerblue;
+  color: white;
+}
+
+.header-right {
+  float: right;
+}
+
+/* Leaderboard */
+/* body {
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  color: #333333;
+} */
+
+table, th, td {
+  border: solid 1px #000;
+  padding: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: Arial, sans-serif;
+  line-height: 20px;
+  color: #333333;
+}
+
+.user-handle{
+  font-size: 14px;
+}
+
+.wide{
+  padding-left: 100px;
+  padding-right: 100px;
+  align: left;
+}
+
+table {
+    border-collapse:collapse;
+    caption-side:bottom;
+}
+
+/* 404 page */
+.four-o-four {
+  font-size: 50px;
+}
+
+.not-found {
+  margin-top: 200px;
+}
+
+.not-found-msg{
+  font-size: 30px;
+}
+
+.thumbnail {
+  width: 5%
+}
+
+.question-creator {
+  width: 20%
+}
+
